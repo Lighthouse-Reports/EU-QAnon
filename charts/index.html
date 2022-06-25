@@ -4,9 +4,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript">
+        var strs = [ "String 1", "String 2", "String 3" ];
+        var list = document.createElement("ul");
+        for (var i in strs) {
+            var anchor = document.createElement("a");
+            anchor.href = "#";
+            anchor.innerText = strs[i];
+
+            var elem = document.createElement("li");
+            elem.appendChild(anchor);
+            list.appendChild(elem);
+        }
+    </script>
 </head>
 <body>
-    <div>
+    <!-- <div>
         <ol>
             <li><a href="https://lighthouse-reports.github.io/EU-QAnon-Network-1/charts/qi-followers-trend.html">qi-followers-trend</a></li>
             <li></li>
@@ -14,6 +27,6 @@
             <li></li>
             <li></li>
         </ol>
-    </div>
+    </div> -->
 </body>
 </html>
