@@ -9,7 +9,7 @@
   },
   "text": {
     "more": "Information Flow by TG Channels Forwards",
-    "intro": "Information Flow by TG Channels Forwards",
+    "intro": "Nodes are TG channels.\nEdges show reposts.\nNode colors show betweeness centrality--darker green are higher value.\nNode sizes show the out-degree (directed graph).",
     "title": "Information Flow by TG Channel Forwards"
   },
   "legend": {
