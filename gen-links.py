@@ -3,7 +3,7 @@ from glob import glob
 
 list_of_files = glob('./charts/*.html')
 
-a = ''.join(f'<li><a href="https://lighthouse-reports.github.io/EU-QAnon/charts/{fname}" target="_blank">{fname[9:-5]}</a></li>'
+a = ''.join(f'<li><a href="https://lighthouse-reports.github.io/EU-QAnon/{fname}" target="_blank">{fname[9:-5]}</a></li>'
             for fname in list_of_files)
 
 htmlstr = f'''
@@ -22,5 +22,5 @@ htmlstr = f'''
 </html>
 '''
 
-with open('index.html', 'w') as f:
+with open('./index.html', 'w') as f:
     f.write(htmlstr)
